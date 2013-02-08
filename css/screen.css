@@ -16,18 +16,28 @@ html, body {
 }
 
 body {
-  background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
+  background-color: black;
+  font-family: verdana;
+  color: #C0C0C0;
   *font-size: small;
   text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+  color: #C0C0C0;
 }
 
 h1 {
+  font-size: 125%;
   margin-bottom: 1em;
+}
+
+h2 {
+    font-size: 110%;
+}
+
+h3, h4, h5, h6 {
+    font-size: 100%;
 }
 
 p {
@@ -35,11 +45,11 @@ p {
 }
 
 a {
-  color: #00a;
+  color: #3366CC;
 }
 
 a:hover {
-  color: black;
+  color: white;
 }
 
 a:visited {
@@ -49,6 +59,13 @@ a:visited {
 table {
   font-size: inherit;
   font: 100%;
+  border: 1px solid white;
+  border-collapse:collapse;
+}
+
+table th, td {
+    border: 1px solid white;
+    padding: 5px;
 }
 
 /*****************************************************************************/
@@ -68,7 +85,7 @@ ul.posts {
 
   ul.posts span {
     color: #aaa;
-    font-family: Monaco, "Courier New", monospace;
+    font-family: Verdana;
     font-size: 80%;
   }
 
@@ -80,8 +97,9 @@ ul.posts {
 
 .site {
   font-size: 110%;
+  color: #C0C0C0;
   text-align: justify;
-  width: 42em;
+  width: 900px;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -98,7 +116,7 @@ ul.posts {
   }
 
   .site .title a:hover {
-    color: black;
+    color: white;
   }
 
   .site .title a.extra {
@@ -108,14 +126,14 @@ ul.posts {
   }
 
   .site .title a.extra:hover {
-    color: black;
+    color: white;
   }
 
   .site .meta {
     color: #aaa;
   }
 
-  .site .footer {
+  .site footer {
     font-size: 80%;
     color: #666;
     border-top: 4px solid #eee;
@@ -123,22 +141,27 @@ ul.posts {
     overflow: hidden;
   }
 
-    .site .footer .contact {
+    .site footer .contact {
       float: left;
       margin-right: 3em;
     }
 
-      .site .footer .contact a {
+      .site footer .contact a {
         color: #8085C1;
       }
 
-    .site .footer .rss {
+    .site footer .credit {
+        margin-right: 3em;
+        clear: both;
+    }
+    
+    .site footer .rss {
       margin-top: 1.1em;
       margin-right: -.2em;
       float: right;
     }
 
-      .site .footer .rss img {
+      .site footer .rss img {
         border: 0;
       }
 
@@ -156,7 +179,9 @@ ul.posts {
 
   #post pre {
     border: 1px solid #ddd;
-    background-color: #eef;
+    background-color: black;
+    color: white;
+    font-size: 100%;
     padding: 0 .4em;
   }
 
@@ -167,8 +192,9 @@ ul.posts {
 
   #post code {
     border: 1px solid #ddd;
-    background-color: #eef;
-    font-size: 85%;
+    background-color: black;
+    color: white;
+    font-size: 100%;
     padding: 0 .2em;
   }
 
