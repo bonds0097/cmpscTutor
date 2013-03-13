@@ -6,6 +6,9 @@
 
 /* Global Reset */
 
+/* Import Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Inconsolata:400,700);
+
 * {
   margin: 0;
   padding: 0;
@@ -17,10 +20,11 @@ html, body {
 
 body {
   background-color: black;
-  font-family: verdana;
+  font-family: 'Ubuntu', sans-serif;
   color: #C0C0C0;
-  *font-size: small;
+  font-size: 16px;
   text-align: center;
+  line-height: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,33 +32,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 125%;
-  margin-bottom: 1em;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 110%;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
-h3, h4, h5, h6 {
-    font-size: 100%;
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+h5 {
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 p {
-  margin: 1em 0;
+  margin: 20px 5px 20px 5px;
 }
 
 a {
   color: #3366CC;
 }
 
+a:visited {
+  color: #a0a;
+}
+
 a:hover {
   color: white;
 }
 
-a:visited {
-  color: #a0a;
-}
 
 table {
   font-size: inherit;
@@ -66,6 +83,23 @@ table {
 table th, td {
     border: 1px solid white;
     padding: 5px;
+}
+
+ul, ol {
+  margin: 15px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+code {
+  font-family: 'Inconsolata', "Lucida Console", Monaco, monospace;
+  font-size: 16px;
 }
 
 /*****************************************************************************/
@@ -96,18 +130,17 @@ ul.posts {
 /*****************************************************************************/
 
 .site {
-  font-size: 110%;
   color: #C0C0C0;
   text-align: justify;
-  width: 900px;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
+  width: 960px;
+  margin: 30px auto 30px auto;
 }
 
 .title {
   color: #a00;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
   .site .title a {
@@ -181,25 +214,23 @@ ul.posts {
     border: 1px solid #ddd;
     background-color: black;
     color: white;
-    font-size: 100%;
-    padding: 0 .4em;
+    padding: 10px;
+    margin: 15px;
   }
 
   #post ul,
   #post ol {
-    margin-left: 1.35em;
+    margin: 15px 30px 15px 30px;
   }
 
-  #post code {
-    border: 1px solid #ddd;
+  #post code {    
     background-color: black;
     color: white;
-    font-size: 100%;
-    padding: 0 .2em;
+    font-weight: bold;
   }
 
     #post pre code {
-      border: none;
+      font-weight: normal;
     }
 
   /* terminal */
